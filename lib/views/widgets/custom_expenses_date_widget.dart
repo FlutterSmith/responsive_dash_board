@@ -31,7 +31,7 @@ class CustomExpensesDateWidget extends StatelessWidget {
               child: const Icon(
                 Icons.arrow_back_ios_new_outlined,
                 color: Color(0xFF064061),
-              )),
+              ),),
         ],
       ),
     );
