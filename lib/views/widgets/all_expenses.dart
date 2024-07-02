@@ -3,8 +3,8 @@ import 'package:responsive_dash_board/views/widgets/all_expenses_header.dart';
 import 'package:responsive_dash_board/views/widgets/all_expenses_item_list_view.dart';
 import 'package:responsive_dash_board/views/widgets/custom_background_container.dart';
 
-class AllExpenses extends StatelessWidget {
-  const AllExpenses({super.key});
+class AllExpensesSection extends StatelessWidget {
+  const AllExpensesSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,6 @@ class AllExpenses extends StatelessWidget {
             height: 16,
           ),
           AllExpensesItemListView(),
-          
         ],
       ),
     );
