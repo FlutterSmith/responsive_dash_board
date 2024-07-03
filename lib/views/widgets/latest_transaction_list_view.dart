@@ -28,7 +28,7 @@ class LatestTransactionListView extends StatelessWidget {
     UserInfoModel(
         title: 'Joelvis Pimentel',
         subtitle: 'Joelvis_pime220@gmail.com',
-        image: Assets.imagesFrame1),
+        image: Assets.imagesFrame1)
   ];
 
   @override
