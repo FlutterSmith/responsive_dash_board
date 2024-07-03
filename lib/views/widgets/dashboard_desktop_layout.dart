@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/views/widgets/all_expenses_widget.dart';
+import 'package:responsive_dash_board/views/widgets/custom_dot.dart';
 import 'package:responsive_dash_board/views/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/views/widgets/my_card.dart';
+import 'package:responsive_dash_board/views/widgets/my_cards_page_view.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -29,7 +31,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: MyCardWidget(),
+          child: CustomDotIndicator(),
         ),
       ],
     );

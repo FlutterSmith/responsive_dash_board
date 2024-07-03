@@ -16,7 +16,7 @@ class LatestTransactionListView extends StatelessWidget {
     UserInfoModel(
         title: 'Josua Nunito',
         subtitle: 'JosuaNunito1001@gmail.com',
-        image: Assets.imagesFrame),
+        image: Assets.imagesFrame1),
     UserInfoModel(
         title: 'Joelvis Pimentel',
         subtitle: 'Joelvis_pime220@gmail.com',
@@ -50,10 +50,6 @@ class LatestTransactionListView extends StatelessWidget {
                 .toList()),
       ),
     );
-
-
-
-
 
 //  replace widget for Row & ChildScrollView Widget
     // SizedBox(
