@@ -87,6 +87,7 @@ class MyCardWidget extends StatelessWidget {
               height: 20,
             ),
           ],
+          
         ),
       ),
     );
