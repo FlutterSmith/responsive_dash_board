@@ -14,6 +14,7 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.sizeOf(context).width * 0.5,
       color: const Color(0xFFFFFFFF),
       child: const CustomScrollView(
         slivers: [
