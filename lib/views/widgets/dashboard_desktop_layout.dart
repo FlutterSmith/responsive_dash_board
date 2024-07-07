@@ -22,22 +22,40 @@ class DashboardDesktopLayout extends StatelessWidget {
           width: 32,
         ),
         Expanded(
-          flex: 5,
-          child: AllExpensesAndQuickInvoiceWidget(),
-        ),
-        SizedBox(
-          width: 24,
-        ),
-        Expanded(
-          flex: 3,
-          child: Column(
-            children: [
-              SizedBox(
-                height: 10,
-              ),
-              MyCardsAndTransactionSection(),
-              Expanded(
-                child: InComeSection(),
+          flex: 6,
+          child: CustomScrollView(
+            physics: BouncingScrollPhysics(),
+            slivers: [
+              SliverFillRemaining(
+                hasScrollBody: false,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 5,
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 10.0),
+                        child: AllExpensesAndQuickInvoiceWidget(),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 24,
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: 10,
+                          ),
+                          MyCardsAndTransactionSection(),
+                          Expanded(
+                            child: InComeSection(),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
