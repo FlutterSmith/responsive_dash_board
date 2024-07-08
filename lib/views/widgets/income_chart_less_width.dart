@@ -2,14 +2,14 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
 
-class IncomeChart extends StatefulWidget {
-  const IncomeChart({super.key});
+class IncomeChartLessWidth extends StatefulWidget {
+  const IncomeChartLessWidth({super.key});
 
   @override
-  State<IncomeChart> createState() => _IncomeChartState();
+  State<IncomeChartLessWidth> createState() => _IncomeChartLessWidthState();
 }
 
-class _IncomeChartState extends State<IncomeChart> {
+class _IncomeChartLessWidthState extends State<IncomeChartLessWidth> {
   int activeIndex = -1;
   @override
   Widget build(BuildContext context) {
@@ -30,40 +30,36 @@ class _IncomeChartState extends State<IncomeChart> {
         sections: [
           PieChartSectionData(
             titlePositionPercentageOffset: activeIndex == 0 ? -1 : null,
-            showTitle: activeIndex == 0 ? true : false,
-            color: const Color(0xFF208BC7),
             value: 40,
-            title: '%40',
+            color: const Color(0xFF208BC7),
+            title: activeIndex == 0 ? 'Design service' : '40%',
             radius: activeIndex == 0 ? 60 : 40,
             titleStyle: AppStyles.styleRegular16
                 .copyWith(color: activeIndex == 0 ? null : Colors.white),
           ),
           PieChartSectionData(
             titlePositionPercentageOffset: activeIndex == 1 ? -1 : null,
-            showTitle: activeIndex == 1 ? true : false,
-            color: const Color(0xFF4DB7F2),
             value: 25,
-            title: '25%',
+            color: const Color(0xFF4DB7F2),
+            title: activeIndex == 1 ? 'Design product' : '25%',
             radius: activeIndex == 1 ? 60 : 40,
             titleStyle: AppStyles.styleRegular16
                 .copyWith(color: activeIndex == 1 ? null : Colors.white),
           ),
           PieChartSectionData(
             titlePositionPercentageOffset: activeIndex == 2 ? -1 : null,
-            showTitle: activeIndex == 2 ? true : false,
-            color: const Color(0xFF064060),
             value: 20,
-            title: '20%',
+            color: const Color(0xFF064060),
+            title: activeIndex == 2 ? 'Product royalti' : '20%',
             radius: activeIndex == 2 ? 60 : 40,
             titleStyle: AppStyles.styleRegular16
                 .copyWith(color: activeIndex == 2 ? null : Colors.white),
           ),
           PieChartSectionData(
             titlePositionPercentageOffset: activeIndex == 3 ? -1 : null,
-            showTitle: activeIndex == 3 ? true : false,
-            color: const Color(0xFFE2DECD),
             value: 22,
-            title: '22%',
+            color: const Color(0xFFE2DECD),
+            title: activeIndex == 3 ? 'other' : '22%',
             radius: activeIndex == 3 ? 60 : 40,
             titleStyle: AppStyles.styleRegular16
                 .copyWith(color: activeIndex == 3 ? null : Colors.white),
