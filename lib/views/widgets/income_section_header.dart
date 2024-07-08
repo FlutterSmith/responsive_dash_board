@@ -10,14 +10,14 @@ class IncomeSectionHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+        Text(
           'Income',
-          style: AppStyles.styleSimiBold20,
+          style: AppStyles.styleSimiBold20(context),
         ),
         const Expanded(child: SizedBox()),
-        const Text(
+        Text(
           'Monthly',
-          style: AppStyles.styleMedium16,
+          style: AppStyles.styleMedium16(context),
         ),
         const SizedBox(
           width: 18,

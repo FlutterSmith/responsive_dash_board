@@ -34,7 +34,7 @@ class _IncomeChartLessWidthState extends State<IncomeChartLessWidth> {
             color: const Color(0xFF208BC7),
             title: activeIndex == 0 ? 'Design service' : '40%',
             radius: activeIndex == 0 ? 60 : 40,
-            titleStyle: AppStyles.styleRegular16
+            titleStyle: AppStyles.styleRegular16(context)
                 .copyWith(color: activeIndex == 0 ? null : Colors.white),
           ),
           PieChartSectionData(
@@ -43,7 +43,7 @@ class _IncomeChartLessWidthState extends State<IncomeChartLessWidth> {
             color: const Color(0xFF4DB7F2),
             title: activeIndex == 1 ? 'Design product' : '25%',
             radius: activeIndex == 1 ? 60 : 40,
-            titleStyle: AppStyles.styleRegular16
+            titleStyle: AppStyles.styleRegular16(context)
                 .copyWith(color: activeIndex == 1 ? null : Colors.white),
           ),
           PieChartSectionData(
@@ -52,7 +52,7 @@ class _IncomeChartLessWidthState extends State<IncomeChartLessWidth> {
             color: const Color(0xFF064060),
             title: activeIndex == 2 ? 'Product royalti' : '20%',
             radius: activeIndex == 2 ? 60 : 40,
-            titleStyle: AppStyles.styleRegular16
+            titleStyle: AppStyles.styleRegular16(context)
                 .copyWith(color: activeIndex == 2 ? null : Colors.white),
           ),
           PieChartSectionData(
@@ -61,7 +61,7 @@ class _IncomeChartLessWidthState extends State<IncomeChartLessWidth> {
             color: const Color(0xFFE2DECD),
             title: activeIndex == 3 ? 'other' : '22%',
             radius: activeIndex == 3 ? 60 : 40,
-            titleStyle: AppStyles.styleRegular16
+            titleStyle: AppStyles.styleRegular16(context)
                 .copyWith(color: activeIndex == 3 ? null : Colors.white),
           ),
         ]);

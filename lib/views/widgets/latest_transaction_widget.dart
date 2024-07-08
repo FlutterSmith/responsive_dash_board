@@ -12,7 +12,7 @@ class LatestTransactionWidget extends StatelessWidget {
       children: [
         Text(
           'Latest Transaction',
-          style: AppStyles.styleSimiBold16.copyWith(
+          style: AppStyles.styleSimiBold16(context).copyWith(
             color: const Color(0xff064061),
           ),
         ),

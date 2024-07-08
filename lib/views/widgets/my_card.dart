@@ -30,11 +30,13 @@ class MyCardWidget extends StatelessWidget {
               ),
               title: Text(
                 'Name card',
-                style: AppStyles.styleRegular16.copyWith(color: Colors.white),
+                style: AppStyles.styleRegular16(context)
+                    .copyWith(color: Colors.white),
               ),
               subtitle: Text(
                 'Ahmed Hamdy',
-                style: AppStyles.styleSimiBold20.copyWith(color: Colors.white),
+                style: AppStyles.styleSimiBold20(context)
+                    .copyWith(color: Colors.white),
               ),
               trailing: SvgPicture.asset(Assets.imagesGallery),
             ),
@@ -48,8 +50,8 @@ class MyCardWidget extends StatelessWidget {
                 children: [
                   Text(
                     '0918 8124 0042 8129',
-                    style:
-                        AppStyles.styleSimiBold24.copyWith(color: Colors.white),
+                    style: AppStyles.styleSimiBold24(context)
+                        .copyWith(color: Colors.white),
                   ),
                   const SizedBox(
                     height: 12,
@@ -59,7 +61,7 @@ class MyCardWidget extends StatelessWidget {
                     children: [
                       Text(
                         '12/20',
-                        style: AppStyles.styleRegular16
+                        style: AppStyles.styleRegular16(context)
                             .copyWith(color: Colors.white),
                       ),
                       const SizedBox(
@@ -67,7 +69,7 @@ class MyCardWidget extends StatelessWidget {
                       ),
                       Text(
                         '-',
-                        style: AppStyles.styleRegular16
+                        style: AppStyles.styleRegular16(context)
                             .copyWith(color: Colors.white),
                       ),
                       const SizedBox(
@@ -75,7 +77,7 @@ class MyCardWidget extends StatelessWidget {
                       ),
                       Text(
                         '134',
-                        style: AppStyles.styleRegular16
+                        style: AppStyles.styleRegular16(context)
                             .copyWith(color: Colors.white),
                       ),
                     ],
@@ -87,7 +89,6 @@ class MyCardWidget extends StatelessWidget {
               height: 20,
             ),
           ],
-          
         ),
       ),
     );
