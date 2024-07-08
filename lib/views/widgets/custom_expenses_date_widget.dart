@@ -19,19 +19,20 @@ class CustomExpensesDateWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Text(
+          Text(
             'Monthly',
-            style: AppStyles.styleMedium16,
+            style: AppStyles.styleMedium16(context),
           ),
           const SizedBox(
             width: 18,
           ),
           Transform.rotate(
-              angle: -90 * 3.14 / 180,
-              child: const Icon(
-                Icons.arrow_back_ios_new_outlined,
-                color: Color(0xFF064061),
-              ),),
+            angle: -90 * 3.14 / 180,
+            child: const Icon(
+              Icons.arrow_back_ios_new_outlined,
+              color: Color(0xFF064061),
+            ),
+          ),
         ],
       ),
     );

@@ -19,7 +19,7 @@ class InActiveDrawerItem extends StatelessWidget {
         leading: SvgPicture.asset(drawerItemModel.image),
         title: Text(
           drawerItemModel.title,
-          style: AppStyles.styleRegular16,
+          style: AppStyles.styleRegular16(context),
         ),
       ),
     );
@@ -40,7 +40,7 @@ class ActiveDrawerItem extends StatelessWidget {
       leading: SvgPicture.asset(drawerItemModel.image),
       title: Text(
         drawerItemModel.title,
-        style: AppStyles.styleBold16.copyWith(color: const Color(0xff4EB7F2)),
+        style: AppStyles.styleBold16(context).copyWith(color: const Color(0xff4EB7F2)),
       ),
       trailing: Container(
         width: 3,

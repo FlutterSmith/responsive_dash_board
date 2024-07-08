@@ -36,7 +36,7 @@ class _MyCardSectionState extends State<MyCardSection> {
         ),
         Text(
           'My card',
-          style: AppStyles.styleSimiBold20.copyWith(
+          style: AppStyles.styleSimiBold20(context).copyWith(
             color: const Color(0xff064061),
           ),
         ),

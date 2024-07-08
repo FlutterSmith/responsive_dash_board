@@ -33,7 +33,7 @@ class InActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.title,
-            style: AppStyles.styleSimiBold16.copyWith(
+            style: AppStyles.styleSimiBold16(context).copyWith(
               color: const Color(0xff064061),
             ),
           ),
@@ -42,7 +42,7 @@ class InActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.subtitle,
-            style: AppStyles.styleRegular14.copyWith(
+            style: AppStyles.styleRegular14(context).copyWith(
               color: const Color(0xffAAAAAA),
             ),
           ),
@@ -51,7 +51,7 @@ class InActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.price,
-            style: AppStyles.styleSimiBold24.copyWith(
+            style: AppStyles.styleSimiBold24(context).copyWith(
               color: const Color(0xFF4DB7F2),
             ),
           ),
@@ -95,7 +95,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.title,
-            style: AppStyles.styleSimiBold16.copyWith(
+            style: AppStyles.styleSimiBold16(context).copyWith(
               color: Colors.white,
             ),
           ),
@@ -104,7 +104,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.subtitle,
-            style: AppStyles.styleRegular14.copyWith(
+            style: AppStyles.styleRegular14(context).copyWith(
               color: const Color(0xFFFAFAFA),
             ),
           ),
@@ -113,7 +113,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.price,
-            style: AppStyles.styleSimiBold24.copyWith(
+            style: AppStyles.styleSimiBold24(context).copyWith(
               color: Colors.white,
             ),
           ),

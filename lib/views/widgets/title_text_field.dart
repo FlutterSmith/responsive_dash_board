@@ -15,7 +15,7 @@ class TitleTextField extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyles.styleSimiBold16.copyWith(
+          style: AppStyles.styleSimiBold16(context).copyWith(
             color: const Color(0xff064061),
           ),
         ),

@@ -35,7 +35,7 @@ class _IncomeChartState extends State<IncomeChart> {
             value: 40,
             title: '%40',
             radius: activeIndex == 0 ? 60 : 40,
-            titleStyle: AppStyles.styleRegular16
+            titleStyle: AppStyles.styleRegular16(context)
                 .copyWith(color: activeIndex == 0 ? null : Colors.white),
           ),
           PieChartSectionData(
@@ -45,7 +45,7 @@ class _IncomeChartState extends State<IncomeChart> {
             value: 25,
             title: '25%',
             radius: activeIndex == 1 ? 60 : 40,
-            titleStyle: AppStyles.styleRegular16
+            titleStyle: AppStyles.styleRegular16(context)
                 .copyWith(color: activeIndex == 1 ? null : Colors.white),
           ),
           PieChartSectionData(
@@ -55,7 +55,7 @@ class _IncomeChartState extends State<IncomeChart> {
             value: 20,
             title: '20%',
             radius: activeIndex == 2 ? 60 : 40,
-            titleStyle: AppStyles.styleRegular16
+            titleStyle: AppStyles.styleRegular16(context)
                 .copyWith(color: activeIndex == 2 ? null : Colors.white),
           ),
           PieChartSectionData(
@@ -65,7 +65,7 @@ class _IncomeChartState extends State<IncomeChart> {
             value: 22,
             title: '22%',
             radius: activeIndex == 3 ? 60 : 40,
-            titleStyle: AppStyles.styleRegular16
+            titleStyle: AppStyles.styleRegular16(context)
                 .copyWith(color: activeIndex == 3 ? null : Colors.white),
           ),
         ]);
