@@ -26,7 +26,7 @@ class UserInfoListTile extends StatelessWidget {
                 .copyWith(color: const Color(0xff064061)),
           ),
           subtitle: Text(userInfoModel.subtitle,
-              style: AppStyles.styleRegular12(context)),
+              style: AppStyles.styleRegular12((context))),
         ),
       ),
     );
