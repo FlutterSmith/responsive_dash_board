@@ -75,7 +75,7 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
 
-  double lowerLimit = fontSize * 0.8;
+  double lowerLimit = fontSize * 0.7;
   double upperLimit = fontSize * 1.2;
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
 }
@@ -88,7 +88,7 @@ double getScaleFactor(context) {
   } else if (width < SizeConfig.desktop) {
     return width / 1000;
   } else {
-    return width / 1920;
+    return width / 2000;
   }
 }
 
@@ -127,7 +127,7 @@ abstract class AppStyles {
     );
   }
 
-   static TextStyle styleSimiBold20(BuildContext context) {
+  static TextStyle styleSimiBold20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
       fontWeight: FontWeight.w600,
