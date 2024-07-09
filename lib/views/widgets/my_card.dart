@@ -54,7 +54,7 @@ class MyCardWidget extends StatelessWidget {
                         .copyWith(color: Colors.white),
                   ),
                   const SizedBox(
-                    height: 12,
+                    height: 8,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -85,8 +85,10 @@ class MyCardWidget extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 20,
+            const Flexible(
+              child: SizedBox(
+                height: 20,
+              ),
             ),
           ],
         ),

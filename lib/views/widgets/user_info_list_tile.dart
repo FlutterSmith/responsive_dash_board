@@ -20,10 +20,14 @@ class UserInfoListTile extends StatelessWidget {
       child: Center(
         child: ListTile(
           leading: SvgPicture.asset(userInfoModel.image),
-          title: Text(
-            userInfoModel.title,
-            style: AppStyles.styleSimiBold16(context)
-                .copyWith(color: const Color(0xff064061)),
+          title: FittedBox(
+            alignment: AlignmentDirectional.centerStart,
+            fit: BoxFit.scaleDown,
+            child: Text(
+              userInfoModel.title,
+              style: AppStyles.styleSimiBold16(context)
+                  .copyWith(color: const Color(0xff064061)),
+            ),
           ),
           subtitle: Text(userInfoModel.subtitle,
               style: AppStyles.styleRegular12((context))),
